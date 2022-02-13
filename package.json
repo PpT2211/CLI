@@ -16,6 +16,8 @@
   "license": "ISC",
   "description": "A simple command line interface",
   "dependencies": {
+    "axios": "^0.26.0",
+    "cheerio": "^1.0.0-rc.10",
     "cowsay": "^1.5.0",
     "franc": "^6.0.0",
     "langs": "^2.0.0",
