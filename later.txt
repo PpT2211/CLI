@@ -1,0 +1,15 @@
+
+This is a smol piece of code to like detect language. Right now we'll build that thing and then later we can add stuff.
+
+1. Language guesser
+
+    varible declaration:
+        var input = franc(yargs.argv["_"][0])
+        
+    body:
+        if (input === "und") {
+            console.log("Idk")
+        } else {
+            var language = langs.where("3", input).name
+            console.log(language)
+        }
