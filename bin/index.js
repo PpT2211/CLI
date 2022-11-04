@@ -46,6 +46,9 @@ else if (yargs.argv.c == true || yargs.argv.covid == true) {
         scraper.allInfo()
     } else if (yargs.argv._) {
         for (let i of yargs.argv._) {
+            if(i.includes("_")){
+                i = i.split("_").join(" ")
+            }
             scraper.stateWise(i)
         }
     }
