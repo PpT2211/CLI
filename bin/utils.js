@@ -36,7 +36,7 @@ const guessLang = (input) => {
 const utils = {
     parseSentence: parseSentence,
     showOptions: showOptions,
-    showAll: showAll,
+    // showAll: showAll,
     guessLang: guessLang
 }
 
