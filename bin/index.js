@@ -36,7 +36,8 @@ const options = yargs
 
 
 if (yargs.argv.l == true || yargs.argv.languages == true) {
-    utils.showAll();
+    var input = franc(yargs.argv["_"][0],{minLength: 3})
+    utils.guessLang(input)
 }
 else if (yargs.argv.m == true || yargs.argv.make == true) {
     makeProject(yargs.argv._);

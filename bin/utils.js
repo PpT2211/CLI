@@ -18,16 +18,26 @@ const showOptions = (usage) => {
     console.log('\t--help\t\t      ' + 'Show help.' + '\t\t\t' + '[boolean]\n')
 }
 
-const showAll = () => {
-    for (let i = 0; i < langs.all().length; i++) {
-        console.log(`Name: ${langs.all()[i].name}, code: ${langs.all()[i]["2T"]} `)
+// const showAll = () => {
+//     for (let i = 0; i < langs.all().length; i++) {
+//         console.log(`Name: ${langs.all()[i].name}, code: ${langs.all()[i]["2T"]} `)
+//     }
+// }
+
+const guessLang = (input) => {
+    if (input === "und") {
+        console.log("Idk")
+    } else {
+        var language = langs.where("3", input).name
+        console.log(language)
     }
 }
 
 const utils = {
     parseSentence: parseSentence,
     showOptions: showOptions,
-    showAll: showAll
+    showAll: showAll,
+    guessLang: guessLang
 }
 
 export default utils
